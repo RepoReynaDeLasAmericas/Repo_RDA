@@ -49,12 +49,12 @@ header {
     border-radius: 4px;
     margin-top: 10px;
 }
-
+/*Titulo del encabezado*/
 header h1 {
-    font-size: 5rem; /* Esto hará que la letra sea bastante grande y legible */
+    font-size: 4rem; /* Esto hará que la letra sea bastante grande y legible */
     font-weight: 800; /* Grosor de texto */
     letter-spacing: -1px; /* Redice el espacio entre letras para una vista moderna */
-    margin: 10 px 0;      /* Elimina espacios extra innecesarios */
+    margin: 0;      /* Elimina espacios extra innecesarios */
 }
 
 /* Contenedor para alinear logo y texto */
