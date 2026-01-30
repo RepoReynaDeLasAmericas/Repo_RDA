@@ -77,3 +77,17 @@ header h1 {
         flex-direction: column;
     }
 }
+/* LOGO */
+.header-container {
+    display: flex;
+    flex-direction: column; /* Pone el logo arriba y el texto abajo */
+    align-items: right;
+    justify-content: right;
+}
+
+.header-logo {
+    width: 150px; /* Tamaño del logo más grande para que no se pierda */
+    right: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.2)); /* Le da un toque de relieve al logo */
+}
