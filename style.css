@@ -51,6 +51,29 @@ header {
 }
 
 header h1 {
-    font-size: 3rem; /* Esto hará que la letra sea bastante grande y legible */
-    margin: 0;      /* Elimina espacios extra innecesarios */
+    font-size: 5rem; /* Esto hará que la letra sea bastante grande y legible */
+    font-weight: 800; /* Grosor de texto */
+    letter-spacing: -1px; /* Redice el espacio entre letras para una vista moderna */
+    margin: 10 px 0;      /* Elimina espacios extra innecesarios */
+}
+
+/* Contenedor para alinear logo y texto */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre el logo y el texto */
+}
+
+/* Tamaño del logo */
+.logo {
+    height: 80px; /* Ajusta según el tamaño de tu título */
+    width: auto;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
 }
