@@ -80,15 +80,14 @@ header h1 {
 /* LOGO */
 .header-container {
     display: flex;
-    flex-direction: column; /* Mantiene el logo arriba y el texto abajo */
-    align-items: center;    /* Centra todo horizontalmente */
-    justify-content: center; /* Centra todo verticalmente */
-    text-align: center;
+    flex-direction: row; /* Esto los pone en la misma línea */
+    align-items: center;    /* Alinea verticalmente al centro el logo y el texto */
+    justify-content: center; /* Centra todo el bloque en el medio de la página */
+    gap: 25px;              /* Espacio de separación entre el logo y el título */
+    padding: 20px;
 }
 
 .header-logo {
-    width: 180px; /* Aumentamos un poco el tamaño */
+   width: 120px;           /* Ajusta el tamaño según prefieras */
     height: auto;
-    margin-bottom: 15px;
-    display: block; /* Asegura que se comporte como un bloque para el centrado */
 }
