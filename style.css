@@ -80,23 +80,32 @@ header h1 {
 /* LOGO */
 .header-container {
     display: flex;
-    flex-direction: row; /* Pone el logo y el texto en la misma línea */
-    align-items: center;    /* Alinea verticalmente al centro */
-    justify-content: center; /* Centra todo el grupo en la pantalla */
-    gap: 30px;              /* Espacio de separación entre el logo y el título */
-    padding: 20px;
-    text-align: left;       /* Alinea el texto a la izquierda respecto a su contenedor */
+    flex-direction: row;    /* Los pone uno al lado del otro */
+    align-items: center;    /* Los alinea verticalmente al centro */
+    justify-content: flex-start; /* Los pega al lado izquierdo */
+    max-width: 1000px;
+    margin: 0 auto;         /* Centra el bloque entero en la pantalla */
+    padding: 0 20px;
+    gap: 15px;              /* Espacio pequeño entre logo y texto */
 }
 
 .header-logo {
-    width: 130px;           /* Tamaño moderado para que no opaque al título */
+    width: 80px;            /* Tamaño más discreto para un header delgado */
     height: auto;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.2));
 }
 
 /* Bloque de texto */
 .header-text {
-    display: flex;
-    flex-direction: column; /* Mantiene el título sobre el nombre del instituto */
-    align-items: flex-start; /* Alinea el texto a la izquierda */
+    text-align: left;       /* Texto alineado a la izquierda */
+}
+
+.header-text h1 {
+    font-size: 2rem;        /* Tamaño grande pero equilibrado */
+    margin: 0;
+    line-height: 1;
+} 
+    
+.header-text p {
+    font-size: 0.9rem;      /* Párrafo más pequeño debajo del título */
+    margin: 5px 0 0 0;
 }
