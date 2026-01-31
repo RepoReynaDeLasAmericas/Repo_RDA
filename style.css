@@ -151,3 +151,9 @@ header h1 {
 }
 .btn-ver { background: #1a237e; color: white; }
 .btn-descargar { border: 1px solid #1a237e; color: #1a237e; margin-left: 5px; }
+
+@media (max-width: 768px) {
+    .main-content-grid {
+        grid-template-columns: 1fr !important; /* En celular, el reglamento pasará abajo de los documentos */
+    }
+}
