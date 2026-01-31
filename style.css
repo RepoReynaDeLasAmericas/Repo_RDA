@@ -13,11 +13,11 @@ body {
 }
 
 header {
-    background-color: var(--azul);
-    color: var(--blanco);
-    padding: 40px;
-    text-align: center;
-    border-bottom: 5px solid var(--naranja);
+    background-color: #1a237e; /* Tu azul */
+    color: #ffffff;
+    padding: 10px 0; /* Solo 10px arriba y abajo para que sea angosto */
+    border-bottom: 5px solid #ff5722; /* Tu naranja */
+    width: 100%;
 }
 
 .container {
@@ -79,18 +79,18 @@ header h1 {
 }
 /* LOGO */
 .header-container {
-    display: flex;
-    flex-direction: row;    /* Los pone uno al lado del otro */
-    align-items: center;    /* Los alinea verticalmente al centro */
-    justify-content: flex-start; /* Los pega al lado izquierdo */
-    max-width: 1000px;
-    margin: 0 auto;         /* Centra el bloque entero en la pantalla */
+    display: flex !important; /* El !important asegura que no sea ignorado */
+    flex-direction: row !important; 
+    align-items: center; 
+    justify-content: flex-start; /* Todo pegado a la izquierda */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
-    gap: 15px;              /* Espacio pequeño entre logo y texto */
+    gap: 15px; /* Espacio exacto entre logo y letras */
 }
 
 .header-logo {
-    width: 80px;            /* Tamaño más discreto para un header delgado */
+    width: 70px !important; 
     height: auto;
 }
 
@@ -100,12 +100,14 @@ header h1 {
 }
 
 .header-text h1 {
-    font-size: 2rem;        /* Tamaño grande pero equilibrado */
+    font-size: 1.8rem;
     margin: 0;
+    padding: 0;
     line-height: 1;
 } 
     
 .header-text p {
-    font-size: 0.9rem;      /* Párrafo más pequeño debajo del título */
-    margin: 5px 0 0 0;
+    font-size: 0.85rem;
+    margin: 3px 0 0 0;
+    padding: 0;
 }
