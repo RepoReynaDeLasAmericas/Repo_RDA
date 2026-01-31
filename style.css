@@ -112,3 +112,42 @@ header h1 {
     margin: 2px 0 0 0 !important;
     padding: 0 !important;
 }
+
+/* Contenedor de las tarjetas */
+.grid-documentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de la tarjeta (Template) */
+.card-documento {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #ff5722; /* Tu naranja institucional */
+    padding: 15px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.card-documento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tag-acceso { background: #00bfa5; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; }
+.doc-titulo { color: #1a237e; margin: 10px 0; font-size: 1.2rem; }
+.doc-autor { font-style: italic; color: #666; font-size: 0.9rem; }
+
+/* Botones */
+.btn-ver, .btn-descargar {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn-ver { background: #1a237e; color: white; }
+.btn-descargar { border: 1px solid #1a237e; color: #1a237e; margin-left: 5px; }
