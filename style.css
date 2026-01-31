@@ -79,19 +79,20 @@ header h1 {
 }
 /* LOGO */
 .header-container {
-    display: flex !important; /* El !important asegura que no sea ignorado */
-    flex-direction: row !important; 
-    align-items: center; 
-    justify-content: flex-start; /* Todo pegado a la izquierda */
+    display: flex !important;
+    flex-direction: row !important; /* Obliga a estar en una sola línea */
+    align-items: center !important;  /* Alinea verticalmente el logo con las letras */
+    justify-content: flex-start !important; /* Pega todo al borde izquierdo */
+    gap: 15px; /* Espacio de separación pegado */
+    padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    gap: 15px; /* Espacio exacto entre logo y letras */
 }
 
 .header-logo {
-    width: 70px !important; 
-    height: auto;
+    width: 60px !important; /* Ajustamos para que el header sea angosto */
+    height: auto !important;
+    margin: 0 !important;
 }
 
 /* Bloque de texto */
@@ -100,14 +101,14 @@ header h1 {
 }
 
 .header-text h1 {
-    font-size: 1.8rem;
-    margin: 0;
-    padding: 0;
+    font-size: 1.8rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
     line-height: 1;
 } 
     
 .header-text p {
-    font-size: 0.85rem;
-    margin: 3px 0 0 0;
-    padding: 0;
+    font-size: 0.8rem !important;
+    margin: 2px 0 0 0 !important;
+    padding: 0 !important;
 }
