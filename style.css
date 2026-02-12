@@ -49,19 +49,51 @@ header {
     border-radius: 4px;
     margin-top: 10px;
 }
-/*contenedor de busqueda*/
+/*INICIO: contenedor de busqueda*/
 .search-container {
     margin: 20px 0;
     display: flex;
     justify-content: center;
 }
 
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #003366; /* Azul institucional */
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.search-box input {
+    border: none;
+    padding: 12px 20px;
+    flex-grow: 1;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0050a0;
+}
+/*FIN: contenedor de busqueda*/
+
 /*Titulo del encabezado*/
 header h1 {
     font-size: 4rem; /* Esto hará que la letra sea bastante grande y legible */
     font-weight: 800; /* Grosor de texto */
     letter-spacing: -1px; /* Redice el espacio entre letras para una vista moderna */
-    margin: 0;      /* Elimina espacios extra innecesarios */
+    margin: 20px;      /* Elimina espacios extra innecesarios */
 }
 
 /* Contenedor para alinear logo y texto */
