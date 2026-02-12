@@ -22,13 +22,19 @@
             <p>Este espacio permite a los alumnos acceder y consultar los anteproyectos académicos y formatos de intervención psicológica.</p>
         </section><!--FIN DE DESCRIPCIÓN-->
         <section class="filters"><!--INICIO: FILTRO PARA BUSCAR-->
-            <input type="text" id="searchInput" placeholder="Buscar anteproyecto...">
-            <select id="categoryFilter">
-                <option value="all">Todas las categorías</option>
-                <option value="tesis">Tesis</option>
-                <option value="investigacion">Investigación</option>
+            <div>
+                <input type="text" id="searchInput" placeholder="Buscar anteproyecto...">
+                <button class="btn-search">Buscar</button>
+            </div>    
+                <select id="categoryFilter">
+                    <option value="all">Todas las categorías</option>
+                    <option value="fpublicacion">Fecha de publicación</option>
+                    <option value="autir">Autor</option>
+                    <option value="tema">Tema</option>
+                    <option value="categoria">Categoría</option>
+                    <option value="asesor">Asesoir</option>
             </select>
-            <button class="btn-search">Buscar</button>
+            
         </section>
     </div><!--FIN: FILTRO PARA BUSCAR-->
     <div>

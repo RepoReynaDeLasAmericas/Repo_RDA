@@ -50,41 +50,55 @@ header {
     margin-top: 10px;
 }
 /*INICIO: contenedor de busqueda*/
-.search-container {
-    margin: 20px 0;
+/* Contenedor principal que ya tenías */
+.filters {
     display: flex;
+    gap: 15px;
+    align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
-.search-box {
+/* El nuevo contenedor para que el input y el botón parezcan uno solo */
+.search-wrapper {
     display: flex;
-    width: 100%;
-    max-width: 600px;
     border: 2px solid #003366; /* Azul institucional */
     border-radius: 25px;
     overflow: hidden;
-    background-color: #fff;
-}
-
-.search-box input {
-    border: none;
-    padding: 12px 20px;
+    background: white;
     flex-grow: 1;
-    outline: none;
-    font-size: 16px;
+    max-width: 500px;
 }
 
-.search-btn {
+/* Estilo para el input (ID: searchInput) */
+#searchInput {
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    width: 100%;
+}
+
+/* Estilo para tu botón (Clase: btn-search) */
+.btn-search {
     background-color: #003366;
     color: white;
     border: none;
-    padding: 0 25px;
+    padding: 10px 25px;
     cursor: pointer;
+    font-weight: bold;
     transition: background 0.3s;
 }
 
-.search-btn:hover {
+.btn-search:hover {
     background-color: #0050a0;
+}
+
+/* Estilo para el select que ya tienes */
+#categoryFilter {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
 }
 /*FIN: contenedor de busqueda*/
 
