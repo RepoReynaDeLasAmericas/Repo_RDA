@@ -4,26 +4,42 @@
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Repositorio Institucional - Reyna de las Américas</title> <link rel="stylesheet" href="style.css"> </head>
 </head>
 <body> <!--Estructura de la página-->
-    <header> <!--Encabezado de página-->
+    <header> <!--Encabezado de página (PARTE 01)-->
         <div class="header-container">
             <a href="index.html"><img src="img/logo-reyna.png" alt="Logo" class="header-logo"></a> <!--Prueba de enaces-->
             <a href="documentos/politica/politica-repo.pdf">Política</a>
             <a href="Manual">Manual</a>
+            <a href="contacto">Contáctanos</a>
         </div> <!--Final de encabezado-->
-        </div class="header-text">
+        </div class="header-text"> <!--TITULO-->
                 <!--<img src="img/logo-reyna.png" alt="Logo" class="header-logo">--IMAGEN-->
                 <h1>REPOSITORIO INSTITUCIONAL</h1>
                 <p style="margin: 0;">Instituto de Educación Superior Tecnológico Privado Reyna de las Américas</p>
-        </div>
+        </div> <!--FINAL DE TITULO-->
     </header>
-
-    <div class="container">
+    <div class="container"><!--INICIO DE DESCRIPCIÓN (PARTE 02)-->
         <section class="bienvenida">
             <h2>Acceso a Reglas institucionales</h2>
             <p>Este espacio permite a los alumnos acceder y consultar los anteproyectos académicos y formatos de intervención psicológica.</p>
+        </section><!--FIN DE DESCRIPCIÓN-->
+            <div class="search-container"><!--BUSCADOR-->
+                <div class="search-box">
+                    <i class="fas fa-search"></i> <input type="text" id="mainSearch" placeholder="Buscar por título, autor o palabras clave...">
+                    <button type="submit" class="search-btn">Buscar</button>
+                </div>
+            </div><!--BUSCADOR-->
+        <section class="filters"><!--INICIO: FILTRO PARA BUSCAR-->
+            <input type="text" id="searchInput" placeholder="Buscar por título, autor o palabra clave...">
+            <select id="categoryFilter">
+                <option value="all">Todas las categorías</option>
+                <option value="tesis">Tesis</option>
+                <option value="investigacion">Investigación</option>
+            </select>
+            <button class="btn-search">Buscar</button>
         </section>
-        <!--Inicio de "Documentos recientes" con div interactuable-->
-        <section class="documentos-lista">
+    </div><!--FIN: FILTRO PARA BUSCAR-->
+    <div>
+        <section class="documentos-lista"><!--Inicio de "Documentos recientes" con div interactuable-->
             <h2 style="color: #1a237e; margin-left: 20px;">Documentos Recientes</h2>
             <div class="grid-documentos">
             <div class="card-documento">
