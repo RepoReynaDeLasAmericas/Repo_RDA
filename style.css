@@ -49,6 +49,13 @@ header {
     border-radius: 4px;
     margin-top: 10px;
 }
+/*contenedor de busqueda*/
+.search-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
 /*Titulo del encabezado*/
 header h1 {
     font-size: 4rem; /* Esto hará que la letra sea bastante grande y legible */
