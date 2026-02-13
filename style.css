@@ -210,3 +210,59 @@ header h1 {
         grid-template-columns: 1fr !important; /* En celular, el reglamento pasará abajo de los documentos */
     }
 }
+
+/*INICIO DE PIE DE PÁGINA*/
+.footer {
+    background-color: #2c3e50; /* Un azul oscuro institucional */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3, .footer-column h4 {
+    margin-bottom: 15px;
+    color: #ecf0f1;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #34495e;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #95a5a6;
+}
